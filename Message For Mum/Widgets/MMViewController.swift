@@ -19,6 +19,7 @@ class MMViewController: UIViewController {
     // MARK: - Views
     
     public let backgroundImageView: UIImageView = UIImageView()
+    public let topBar: UIView = UIView()
     
     // MARK: - Lifecycle
     
@@ -39,6 +40,12 @@ class MMViewController: UIViewController {
         // Background image view
         view.addSubview(backgroundImageView)
         backgroundImageView.fill()
+        
+        // Top bar
+        view.addSubview(topBar)
+        topBar.alignTo(edge: .top, length: 64.0)
+        topBar.backgroundColor = .white
+        topBar.addShadow(color: .white, radius: 2.0, opacity: 0.8)
     }
 
 }

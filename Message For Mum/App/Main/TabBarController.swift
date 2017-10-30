@@ -33,7 +33,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let shadowView: UIView = UIView(superview: tabBar)
         shadowView.fill()
         shadowView.backgroundColor = .white
-        shadowView.addShadow(color: .white, offset: CGPoint(x: 0.0, y: -4.0), radius: 4.0, opacity: 0.8)
+        shadowView.addShadow(color: .white, offset: CGPoint(x: 0.0, y: -2.0), radius: 2.0, opacity: 0.8)
         
         // View controllers
         let messageNavVC: UINavigationController = UINavigationController(rootViewController: messageVC)

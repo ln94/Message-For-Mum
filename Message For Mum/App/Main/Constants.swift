@@ -24,7 +24,8 @@ public enum MMApp {
 // MARK: - Colors
 
 public enum MMColor {
-    static let black = UIColor(red256: 128, green256: 128, blue256: 128)
+    static let black = UIColor(red256: 110, green256: 110, blue256: 110)
+    static let darkGray = UIColor(red256: 140, green256: 140, blue256: 140)
     static let lightGray = UIColor(red256: 200, green256: 200, blue256: 200)
 }
 

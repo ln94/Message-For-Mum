@@ -13,7 +13,7 @@ class TransparentView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = UIColor.white.withAlphaComponent(0.6)
+        backgroundColor = UIColor.white.withAlphaComponent(0.7)
         layer.cornerRadius = 5.0
     }
     

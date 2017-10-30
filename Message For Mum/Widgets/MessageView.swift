@@ -31,7 +31,7 @@ class MessageView: UIView {
         addSubview(headerLabel)
         headerLabel.alignTo(edge: .top, length: 12.0)
         headerLabel.applyStyle(.mediumTitle)
-        headerLabel.attributedText = "Новое сообщение".uppercased().withSpacing(letter: 2.0).withTextAlignment(.center)
+        headerLabel.attributedText = "Новое сообщение".uppercased().withSpacing(letter: 2.0, alignment: .center)
 
         // Transparent view
         addSubview(transparentView)
@@ -45,7 +45,7 @@ class MessageView: UIView {
         transparentView.addSubview(titleLabel)
         titleLabel.alignTo(edge: .top, length: 18.0, insets: UIEdgeInsets(top: MMPadding.grand, left: MMPadding.large, right: MMPadding.large))
         titleLabel.applyStyle(.messageTitle)
-        titleLabel.attributedText = title.withSpacing(letter: 1.25, line: 5.0).withTextAlignment(.center)
+        titleLabel.attributedText = title.withSpacing(letter: 1.25, line: 3.0, alignment: .center)
         titleLabel.sizeToFit()
         titleLabel.alignTo(edge: .top, length: titleLabel.height, insets: UIEdgeInsets(top: MMPadding.grand, left: MMPadding.large, right: MMPadding.large))
 
@@ -53,7 +53,7 @@ class MessageView: UIView {
         transparentView.addSubview(textLabel)
         textLabel.alignTo(edge: .top, length: 18.0, insets: UIEdgeInsets(top: titleLabel.bottom + MMPadding.medium, left: MMPadding.medium, right: MMPadding.medium))
         textLabel.applyStyle(.messageText)
-        textLabel.attributedText = text.withSpacing(line: 7.0).withTextAlignment(.justified)
+        textLabel.attributedText = text.withSpacing(letter: 1.0, line: 3.0, alignment: .justified)
         textLabel.sizeToFit()
         textLabel.alignTo(edge: .top, length: textLabel.height, insets: UIEdgeInsets(top: titleLabel.bottom + MMPadding.medium, left: MMPadding.medium, right: MMPadding.medium))
 

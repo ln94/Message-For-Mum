@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension UIColor {
-    
+
     // MARK: - Initialize using 0-255 RGBA values
     
     convenience init(red256: UInt8, green256: UInt8, blue256: UInt8, alpha: CGFloat = 1.0) {
@@ -19,4 +19,5 @@ public extension UIColor {
                   blue: CGFloat(blue256) / 255.0,
                   alpha: alpha)
     }
+
 }

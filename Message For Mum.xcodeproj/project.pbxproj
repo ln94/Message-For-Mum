@@ -20,6 +20,7 @@
 		87B1116F1FA2DA4B002DE127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1116E1FA2DA4B002DE127 /* AppDelegate.swift */; };
 		87B111771FA2DA4B002DE127 /* Message_For_Mum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87B111751FA2DA4B002DE127 /* Message_For_Mum.xcdatamodeld */; };
 		87B1118A1FA2E097002DE127 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B111891FA2E096002DE127 /* TabBarController.swift */; };
+		87C6591B1FA6FBE0008BB34E /* Functions+L.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C6591A1FA6FBE0008BB34E /* Functions+L.swift */; };
 		87C94B9D1FA2E84B006C9B3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C94B9C1FA2E84B006C9B3A /* Constants.swift */; };
 		87E5D53A1FA447E10096E21D /* UIColor+L.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5D5391FA447E10096E21D /* UIColor+L.swift */; };
 		87E5D53C1FA449830096E21D /* UIView+L.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5D53B1FA449830096E21D /* UIView+L.swift */; };
@@ -56,6 +57,7 @@
 		87B111761FA2DA4B002DE127 /* Message_For_Mum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Message_For_Mum.xcdatamodel; sourceTree = "<group>"; };
 		87B1117D1FA2DA4B002DE127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B111891FA2E096002DE127 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		87C6591A1FA6FBE0008BB34E /* Functions+L.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Functions+L.swift"; sourceTree = "<group>"; };
 		87C94B9C1FA2E84B006C9B3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		87E5D5391FA447E10096E21D /* UIColor+L.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+L.swift"; sourceTree = "<group>"; };
 		87E5D53B1FA449830096E21D /* UIView+L.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+L.swift"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				870EAC2E1FA579AE00BA5C68 /* UINavigationController+L.swift */,
+				87C6591A1FA6FBE0008BB34E /* Functions+L.swift */,
 				87E5D5391FA447E10096E21D /* UIColor+L.swift */,
 				87E5D53B1FA449830096E21D /* UIView+L.swift */,
 				87AD77B21FA561FD007B60DA /* UIEdgeInsets+L.swift */,
@@ -275,6 +278,7 @@
 				87B111771FA2DA4B002DE127 /* Message_For_Mum.xcdatamodeld in Sources */,
 				870EAC351FA58FC000BA5C68 /* HeartButton.swift in Sources */,
 				87E5D5421FA44C850096E21D /* MessageViewController.swift in Sources */,
+				87C6591B1FA6FBE0008BB34E /* Functions+L.swift in Sources */,
 				87B1116F1FA2DA4B002DE127 /* AppDelegate.swift in Sources */,
 				87C94B9D1FA2E84B006C9B3A /* Constants.swift in Sources */,
 				87AD77B31FA561FD007B60DA /* UIEdgeInsets+L.swift in Sources */,
