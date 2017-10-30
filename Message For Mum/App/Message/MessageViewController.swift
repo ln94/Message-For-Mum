@@ -33,7 +33,6 @@ class MessageViewController: MMViewController, UIScrollViewDelegate {
         super.viewDidLoad()
 
         // Background image view
-        backgroundImageView.contentMode = .scaleAspectFill
         backgroundImageView.image = #imageLiteral(resourceName: "Message Background")
         
         // Top bar
@@ -55,7 +54,7 @@ class MessageViewController: MMViewController, UIScrollViewDelegate {
         view.addSubview(weekdayLabel)
         weekdayLabel.alignTo(edge: .top, length: 14.0, insets: UIEdgeInsets(top: 92.0))
         weekdayLabel.applyStyle(.smallTitle)
-        weekdayLabel.attributedText = Date().weekdayString().withSpacing(letter: 1.0, alignment: .center)
+        weekdayLabel.attributedText = Date().weekdayFullString().withSpacing(letter: 1.0, alignment: .center)
         
         view.addSubview(headerLine)
         headerLine.alignTo(edge: .top, length: 1.0, insets: UIEdgeInsets(top: 131.0, left: 50.0, right: 50.0))

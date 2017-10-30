@@ -13,7 +13,7 @@ class MMViewController: UIViewController {
     // MARK: - Properties
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+        return .default
     }
     
     // MARK: - Views
@@ -40,12 +40,13 @@ class MMViewController: UIViewController {
         // Background image view
         view.addSubview(backgroundImageView)
         backgroundImageView.fill()
+        backgroundImageView.contentMode = .scaleAspectFill
         
         // Top bar
         view.addSubview(topBar)
         topBar.alignTo(edge: .top, length: 64.0)
         topBar.backgroundColor = .white
-        topBar.addShadow(color: .white, radius: 2.0, opacity: 0.8)
+        topBar.addBarShadow()
     }
 
 }

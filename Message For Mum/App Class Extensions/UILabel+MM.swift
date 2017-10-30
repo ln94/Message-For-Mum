@@ -14,6 +14,7 @@ public enum MMTextStyle {
     case smallTitle
     case messageTitle
     case messageText
+    case navigationTitle
 }
 
 public extension UILabel {
@@ -30,6 +31,8 @@ public extension UILabel {
             font = MMFont.helveticaNeueBold.withSize(15.0)
         case .messageText:
             font = MMFont.helveticaNeueLight.withSize(12.0)
+        case .navigationTitle:
+            font = MMFont.helveticaNeueMedium.withSize(14.0)
         }
         
         // Other parameters
@@ -37,14 +40,19 @@ public extension UILabel {
         case .largeTitle, .mediumTitle, .smallTitle:
             textColor = .white
             textAlignment = .center
-            addShadow(color: .white, offset: CGPoint(x: 0.0, y: 2.0), radius: 4.0, opacity: 0.65)
+            addTextShadow(color: .white)
             
         case .messageTitle, .messageText:
             textColor = MMColor.black
             textAlignment = style == .messageTitle ? .center : .justified
-            addShadow(color: MMColor.black, offset: CGPoint(x: 0.0, y: 2.0), radius: 4.0, opacity: 0.65)
+            addTextShadow(color: MMColor.black)
+            numberOfLines = 0
+            
+        case .navigationTitle:
+            textColor = MMColor.black
+            textAlignment = .center
+            addTextShadow(color: MMColor.darkGray)
             numberOfLines = 0
         }
     }
-    
 }
