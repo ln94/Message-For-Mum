@@ -19,7 +19,7 @@
 		8769001F1FA714B6004572FD /* UIView+MM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8769001E1FA714B6004572FD /* UIView+MM.swift */; };
 		876900211FA7157A004572FD /* MonthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876900201FA7157A004572FD /* MonthTableViewCell.swift */; };
 		876900231FA71742004572FD /* UITableVIew+L.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876900221FA71742004572FD /* UITableVIew+L.swift */; };
-		876900271FA72878004572FD /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876900261FA72878004572FD /* WeekView.swift */; };
+		878BADA71FA820B1005D6876 /* DayLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878BADA61FA820B1005D6876 /* DayLabel.swift */; };
 		87AD77B31FA561FD007B60DA /* UIEdgeInsets+L.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AD77B21FA561FD007B60DA /* UIEdgeInsets+L.swift */; };
 		87B1116F1FA2DA4B002DE127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1116E1FA2DA4B002DE127 /* AppDelegate.swift */; };
 		87B111771FA2DA4B002DE127 /* Message_For_Mum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87B111751FA2DA4B002DE127 /* Message_For_Mum.xcdatamodeld */; };
@@ -59,7 +59,7 @@
 		8769001E1FA714B6004572FD /* UIView+MM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MM.swift"; sourceTree = "<group>"; };
 		876900201FA7157A004572FD /* MonthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTableViewCell.swift; sourceTree = "<group>"; };
 		876900221FA71742004572FD /* UITableVIew+L.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableVIew+L.swift"; sourceTree = "<group>"; };
-		876900261FA72878004572FD /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		878BADA61FA820B1005D6876 /* DayLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayLabel.swift; sourceTree = "<group>"; };
 		87AD77B21FA561FD007B60DA /* UIEdgeInsets+L.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+L.swift"; sourceTree = "<group>"; };
 		87B1116B1FA2DA4B002DE127 /* Message For Mum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Message For Mum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B1116E1FA2DA4B002DE127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 			children = (
 				87C6591D1FA70E6B008BB34E /* CalendarViewController.swift */,
 				876900201FA7157A004572FD /* MonthTableViewCell.swift */,
-				876900261FA72878004572FD /* WeekView.swift */,
+				878BADA61FA820B1005D6876 /* DayLabel.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -298,6 +298,7 @@
 				870EAC311FA58E8D00BA5C68 /* TransparentView.swift in Sources */,
 				870EAC2A1FA565EB00BA5C68 /* NSAttributedString+L.swift in Sources */,
 				870EAC2D1FA5727800BA5C68 /* Date+MM.swift in Sources */,
+				878BADA71FA820B1005D6876 /* DayLabel.swift in Sources */,
 				87B111771FA2DA4B002DE127 /* Message_For_Mum.xcdatamodeld in Sources */,
 				870EAC351FA58FC000BA5C68 /* HeartButton.swift in Sources */,
 				87C6591E1FA70E6B008BB34E /* CalendarViewController.swift in Sources */,
@@ -312,7 +313,6 @@
 				87E5D53A1FA447E10096E21D /* UIColor+L.swift in Sources */,
 				870EAC2F1FA579AE00BA5C68 /* UINavigationController+L.swift in Sources */,
 				8769001F1FA714B6004572FD /* UIView+MM.swift in Sources */,
-				876900271FA72878004572FD /* WeekView.swift in Sources */,
 				870EAC331FA58F4C00BA5C68 /* MessageView.swift in Sources */,
 				870EAC371FA5948900BA5C68 /* UILabel+MM.swift in Sources */,
 				87E5D53C1FA449830096E21D /* UIView+L.swift in Sources */,

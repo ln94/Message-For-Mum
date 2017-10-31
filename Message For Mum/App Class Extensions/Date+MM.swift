@@ -12,6 +12,27 @@ import Foundation
 
 public extension Date {
     
+    init(day: Int, month: Int, year: Int) {
+        let components: DateComponents = DateComponents(year: year, month: month, day: day)
+        self = Calendar.current.date(from: components)!
+    }
+    
+    // MARK: - Properties
+    
+    public var day: Int {
+        return Calendar.current.dateComponents([.day], from: self).day!
+    }
+    
+    public var month: Int {
+        return Calendar.current.dateComponents([.month], from: self).month!
+    }
+    
+    public var year: Int {
+        return Calendar.current.dateComponents([.year], from: self).year!
+    }
+    
+    // MARK: - Fucntions
+    
     func dateString() -> String {
         return MMDateFormatter.shared.string(from: self, format: "d MMMM YYYY")
     }
@@ -30,7 +51,8 @@ public extension Date {
     
     func weekday() -> MMWeekday {
         let i: Int = Calendar.current.component(.weekday, from: self)
-        return MMWeekday(rawValue: i - 2) ?? MMWeekday.count
+        let rawValue: Int = i - 2
+        return MMWeekday(rawValue: rawValue >= 0 ? rawValue : MMWeekday.count.rawValue + rawValue) ?? MMWeekday.count
     }
 }
 
@@ -98,8 +120,7 @@ public enum MMMonth: Int {
     // MARK: - Properties
     
     public var firstDay: Date {
-        let components: DateComponents = DateComponents(year: 2018, month: rawValue + 1, day: 1)
-        return Calendar.current.date(from: components)!
+        return Date(day: 1, month: rawValue + 1, year: MMApp.year)
     }
     
     public var firstDayWeekday: MMWeekday {
@@ -120,7 +141,7 @@ public enum MMMonth: Int {
     }
     
     public var numberOfWeeks: Int {
-        return (firstDayWeekday.rawValue + numberOfDays) / MMWeekday.count.rawValue
+        return (firstDayWeekday.rawValue + numberOfDays) / MMWeekday.count.rawValue + ((firstDayWeekday.rawValue + numberOfDays) % MMWeekday.count.rawValue > 0 ? 1 : 0) 
     }
     
     // MARK: - Functions

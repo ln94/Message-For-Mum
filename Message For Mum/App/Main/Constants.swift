@@ -19,6 +19,8 @@ public enum MMApp {
     }
     
     static let screenSize: CGSize = UIScreen.main.bounds.size
+    
+    static let year: Int = 2018
 }
 
 // MARK: - Colors
@@ -27,6 +29,8 @@ public enum MMColor {
     static let black = UIColor(red256: 110, green256: 110, blue256: 110)
     static let darkGray = UIColor(red256: 140, green256: 140, blue256: 140)
     static let lightGray = UIColor(red256: 200, green256: 200, blue256: 200)
+    static let pink = UIColor(red256: 255, green256: 96, blue256: 118, alpha: 0.4)
+    static let selectionGray = UIColor.black.withAlphaComponent(0.1)
 }
 
 // MARK: - Padding

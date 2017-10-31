@@ -225,4 +225,27 @@ public extension UIView {
             self.frame = frame
         }
     }
+    
+    func alignToCenter(size: CGSize, offset: CGPoint = CGPoint.zero) {
+        guard let superview = self.superview else {
+            return
+        }
+        let autoresizingMask: UIViewAutoresizing = [
+            .flexibleTopMargin,
+            .flexibleBottomMargin,
+            .flexibleRightMargin,
+            .flexibleLeftMargin
+        ]
+        if self.autoresizingMask != autoresizingMask {
+            self.autoresizingMask = autoresizingMask
+        }
+        
+        
+        let frame: CGRect = CGRect(origin: CGPoint(x: (superview.width - size.width) / 2 + offset.x,
+                                                   y: (superview.height - size.height) / 2 + offset.y),
+                                   size: size)
+        if !self.frame.equalTo(frame) {
+            self.frame = frame
+        }
+    }
 }
