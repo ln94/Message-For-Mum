@@ -12,7 +12,9 @@ class MessageViewController: MMViewController, UIScrollViewDelegate {
 
     // MARK: - Properties
     
-    private let maxInset: CGFloat = 68.0
+    public var maxInset: CGFloat {
+        return 68.0
+    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return scrollView.contentInset.top < maxInset / 2 ? .default : .lightContent
@@ -20,12 +22,12 @@ class MessageViewController: MMViewController, UIScrollViewDelegate {
     
     // MARK: - Views
     
-    private let scrollView: UIScrollView = UIScrollView()
-    private let todayLabel: UILabel = UILabel()
-    private let dateLabel: UILabel = UILabel()
-    private let weekdayLabel: UILabel = UILabel()
-    private let headerLine: UIView = UIView()
-    private let messageView: MessageView = MessageView()
+    public let scrollView: UIScrollView = UIScrollView()
+    public let todayLabel: UILabel = UILabel()
+    public let dateLabel: UILabel = UILabel()
+    public let weekdayLabel: UILabel = UILabel()
+    public let headerLine: UIView = UIView()
+    public let messageView: MessageView = MessageView()
     
     // MARK: - Lifecycle
     
@@ -72,8 +74,9 @@ class MessageViewController: MMViewController, UIScrollViewDelegate {
         // Message
         scrollView.addSubview(messageView)
         messageView.y = MMPadding.grand
+        
+        setNeedsStatusBarAppearanceUpdate()
     }
-
     
     // MARK: - UIScrollViewDelegate
     

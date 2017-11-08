@@ -89,6 +89,7 @@ class CalendarViewController: MMViewController, UITableViewDataSource, UITableVi
     // MARK: - MonthTableViewCellDelegate
     
     func didTapOnDate(_ date: Date, completion: @escaping () -> ()) {
+        navigationController?.pushViewController(DayMessageViewController(), animated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             completion()
         }

@@ -14,7 +14,6 @@
 		870EAC331FA58F4C00BA5C68 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EAC321FA58F4C00BA5C68 /* MessageView.swift */; };
 		870EAC351FA58FC000BA5C68 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EAC341FA58FC000BA5C68 /* HeartButton.swift */; };
 		870EAC371FA5948900BA5C68 /* UILabel+MM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EAC361FA5948900BA5C68 /* UILabel+MM.swift */; };
-		872E784F1FA43BA300B3D465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872E784B1FA43BA300B3D465 /* Assets.xcassets */; };
 		872E78501FA43BA300B3D465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 872E784C1FA43BA300B3D465 /* LaunchScreen.storyboard */; };
 		8769001F1FA714B6004572FD /* UIView+MM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8769001E1FA714B6004572FD /* UIView+MM.swift */; };
 		876900211FA7157A004572FD /* MonthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876900201FA7157A004572FD /* MonthTableViewCell.swift */; };
@@ -24,6 +23,7 @@
 		87B1116F1FA2DA4B002DE127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1116E1FA2DA4B002DE127 /* AppDelegate.swift */; };
 		87B111771FA2DA4B002DE127 /* Message_For_Mum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87B111751FA2DA4B002DE127 /* Message_For_Mum.xcdatamodeld */; };
 		87B1118A1FA2E097002DE127 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B111891FA2E096002DE127 /* TabBarController.swift */; };
+		87B6D38C1FA9B18D00263DB6 /* DayMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6D38B1FA9B18D00263DB6 /* DayMessageViewController.swift */; };
 		87C6591B1FA6FBE0008BB34E /* Functions+L.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C6591A1FA6FBE0008BB34E /* Functions+L.swift */; };
 		87C6591E1FA70E6B008BB34E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C6591D1FA70E6B008BB34E /* CalendarViewController.swift */; };
 		87C94B9D1FA2E84B006C9B3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C94B9C1FA2E84B006C9B3A /* Constants.swift */; };
@@ -31,6 +31,7 @@
 		87E5D53C1FA449830096E21D /* UIView+L.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5D53B1FA449830096E21D /* UIView+L.swift */; };
 		87E5D5401FA44C110096E21D /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5D53F1FA44C110096E21D /* MMViewController.swift */; };
 		87E5D5421FA44C850096E21D /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E5D5411FA44C850096E21D /* MessageViewController.swift */; };
+		87EEE8191FA9C3B300B1320B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EEE8181FA9C3B300B1320B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,7 +55,6 @@
 		870EAC321FA58F4C00BA5C68 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		870EAC341FA58FC000BA5C68 /* HeartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
 		870EAC361FA5948900BA5C68 /* UILabel+MM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+MM.swift"; sourceTree = "<group>"; };
-		872E784B1FA43BA300B3D465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		872E784D1FA43BA300B3D465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8769001E1FA714B6004572FD /* UIView+MM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MM.swift"; sourceTree = "<group>"; };
 		876900201FA7157A004572FD /* MonthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTableViewCell.swift; sourceTree = "<group>"; };
@@ -66,6 +66,7 @@
 		87B111761FA2DA4B002DE127 /* Message_For_Mum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Message_For_Mum.xcdatamodel; sourceTree = "<group>"; };
 		87B1117D1FA2DA4B002DE127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B111891FA2E096002DE127 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		87B6D38B1FA9B18D00263DB6 /* DayMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayMessageViewController.swift; sourceTree = "<group>"; };
 		87C6591A1FA6FBE0008BB34E /* Functions+L.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Functions+L.swift"; sourceTree = "<group>"; };
 		87C6591D1FA70E6B008BB34E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		87C94B9C1FA2E84B006C9B3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		87E5D53B1FA449830096E21D /* UIView+L.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+L.swift"; sourceTree = "<group>"; };
 		87E5D53F1FA44C110096E21D /* MMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
 		87E5D5411FA44C850096E21D /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		87EEE8181FA9C3B300B1320B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,7 @@
 		872E784A1FA43BA300B3D465 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				872E784B1FA43BA300B3D465 /* Assets.xcassets */,
+				87EEE8181FA9C3B300B1320B /* Assets.xcassets */,
 				872E784C1FA43BA300B3D465 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -170,6 +172,7 @@
 				87C6591D1FA70E6B008BB34E /* CalendarViewController.swift */,
 				876900201FA7157A004572FD /* MonthTableViewCell.swift */,
 				878BADA61FA820B1005D6876 /* DayLabel.swift */,
+				87B6D38B1FA9B18D00263DB6 /* DayMessageViewController.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -282,7 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872E784F1FA43BA300B3D465 /* Assets.xcassets in Resources */,
+				87EEE8191FA9C3B300B1320B /* Assets.xcassets in Resources */,
 				872E78501FA43BA300B3D465 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +315,7 @@
 				87E5D5401FA44C110096E21D /* MMViewController.swift in Sources */,
 				87E5D53A1FA447E10096E21D /* UIColor+L.swift in Sources */,
 				870EAC2F1FA579AE00BA5C68 /* UINavigationController+L.swift in Sources */,
+				87B6D38C1FA9B18D00263DB6 /* DayMessageViewController.swift in Sources */,
 				8769001F1FA714B6004572FD /* UIView+MM.swift in Sources */,
 				870EAC331FA58F4C00BA5C68 /* MessageView.swift in Sources */,
 				870EAC371FA5948900BA5C68 /* UILabel+MM.swift in Sources */,

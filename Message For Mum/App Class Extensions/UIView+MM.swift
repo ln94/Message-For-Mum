@@ -11,7 +11,7 @@ import UIKit
 public extension UIView {
     
     func addBarShadow(bottom: Bool = true) {
-        addShadow(color: .white, offset: CGPoint(x: 0.0, y: bottom ? 0.0 : -2.0), radius: 2.0, opacity: 0.8)
+        addShadow(color: .white, offset: CGPoint(x: 0.0, y: bottom ? 0.0 : 2.0), radius: 2.0, opacity: 0.8)
     }
     
     func addTextShadow(color: UIColor) {
